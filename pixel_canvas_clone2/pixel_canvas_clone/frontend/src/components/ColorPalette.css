@@ -1,0 +1,107 @@
+.color-palette {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  position: absolute;
+  top: 70px;
+  right: 15px;
+  z-index: 10;
+}
+
+.palette-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.palette-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.cooldown-info {
+  font-size: 0.9rem;
+}
+
+.can-place {
+  color: green;
+  font-weight: bold;
+}
+
+.cooldown-active {
+  color: red;
+}
+
+.stacked-pixels {
+  display: block;
+  margin-top: 5px;
+  color: blue;
+}
+
+.default-colors {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.color-swatch {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: transform 0.1s;
+}
+
+.color-swatch:hover {
+  transform: scale(1.1);
+}
+
+.color-swatch.selected {
+  border: 2px solid #000;
+  transform: scale(1.1);
+}
+
+.custom-color {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.current-color {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.color-picker-popover {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 100%;
+}
+
+.color-picker-cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.login-prompt {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  text-align: center;
+  color: #666;
+}
